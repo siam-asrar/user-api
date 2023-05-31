@@ -4,10 +4,9 @@ const router = express.Router()
 
 router.get('/all', usersController.getAllUsers)
 router.get('/random', usersController.generateRandomUser)
-router.get('/:id', usersController.getUserById)
 router.post('/save', usersController.createUser)
-router.patch('/update/:id', usersController.createUser)
-router.patch('/bulk-update', usersController.createUser)
-router.delete('/delete/:id', usersController.createUser)
+router.patch('/:id', usersController.updateUserById)
+router.put('/bulk-update', usersController.bulkUpdateUsers)
+router.delete('/:id', usersController.deleteUser)
 
 export default router
