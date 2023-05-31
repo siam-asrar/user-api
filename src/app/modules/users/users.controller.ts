@@ -1,6 +1,7 @@
 import { Request, Response } from 'express'
 import usersService from './users.service'
 import data from './dummy-data.json';
+import { generateUserId } from './users.utils';
 
 const getAllUsers = async (req: Request, res: Response) => {
   const { limit } = req.query;
@@ -29,6 +30,7 @@ const getAllUsers = async (req: Request, res: Response) => {
 
 const generateRandomUser = async (req: Request, res: Response) => {
   const result = await usersService.generateRandomUser(data);
+
   try {
     res.status(200).json({
       success: true,
@@ -45,8 +47,8 @@ const generateRandomUser = async (req: Request, res: Response) => {
 
 const getUserById = async (req: Request, res: Response) => {
   const { id } = req.params;
-
   try {
+
     const result = data.find(data => data.id === id) || {};
     res.status(200).json({
       success: true,
@@ -62,12 +64,15 @@ const getUserById = async (req: Request, res: Response) => {
 }
 
 async function createUser(req: Request, res: Response) {
+  const user = req.body;
+  const id = await generateUserId()
+
   try {
-    const user = req.body;
-    const result = await usersService.createUser(user);
+    user.id = id
+    const result = data.push(user)
     res.status(200).json({
       success: true,
-      message: 'user created successfully!',
+      message: 'User created successfully!',
       data: result,
     });
   } catch (err) {
@@ -77,7 +82,6 @@ async function createUser(req: Request, res: Response) {
     });
   }
 }
-
 
 export default {
   createUser,

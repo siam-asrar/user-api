@@ -1,4 +1,4 @@
-export type IUser = {
+export interface IUser {
   id: string
   gender: string
   name: string
@@ -6,3 +6,4 @@ export type IUser = {
   address: string
   photoURL: string
 }
+
