@@ -2,9 +2,9 @@
   "name": "user-api",
   "version": "1.0.0",
   "description": "Generates random user data",
-  "main": "src/server.ts",
+  "main": "dist/server.ts",
   "scripts": {
-    "start": "npx ts-node-dev --respawn --transpile-only src/server.ts",
+    "start": "node dist/server.js",
     "test": "node src/server.ts"
   },
   "repository": {
