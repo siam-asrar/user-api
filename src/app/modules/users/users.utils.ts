@@ -11,12 +11,7 @@ export const generateRandomUserInfo = async (user: IUser[]) => {
 }
 
 export const generateUserId = async () => {
-  const findLastUserId = async () => {
-    const maxId = data.find(data => Math.max(parseInt(data.id)))
-    const lastUser = maxId;
-    return lastUser
-  }
-  const currentId = await findLastUserId() || (0).toString()
-  const incrementedId = parseInt(currentId as string) + 1
+  const currentId = data.length
+  const incrementedId = currentId + 1
   return incrementedId.toString()
 }

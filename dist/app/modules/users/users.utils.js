@@ -24,13 +24,8 @@ const generateRandomUserInfo = (user) => __awaiter(void 0, void 0, void 0, funct
 });
 exports.generateRandomUserInfo = generateRandomUserInfo;
 const generateUserId = () => __awaiter(void 0, void 0, void 0, function* () {
-    const findLastUserId = () => __awaiter(void 0, void 0, void 0, function* () {
-        const maxId = dummy_data_json_1.default.find(data => Math.max(parseInt(data.id)));
-        const lastUser = maxId;
-        return lastUser;
-    });
-    const currentId = (yield findLastUserId()) || (0).toString();
-    const incrementedId = parseInt(currentId) + 1;
+    const currentId = dummy_data_json_1.default.length;
+    const incrementedId = currentId + 1;
     return incrementedId.toString();
 });
 exports.generateUserId = generateUserId;

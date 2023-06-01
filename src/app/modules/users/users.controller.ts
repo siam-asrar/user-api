@@ -2,31 +2,7 @@ import { Request, Response } from 'express'
 import usersService from './users.service'
 import data from './dummy-data.json';
 import { generateUserId } from './users.utils';
-
-const getAllUsers = async (req: Request, res: Response) => {
-  const { limit } = req.query;
-
-  let result;
-
-  if (typeof limit === 'string') {
-    result = await usersService.limitUser(data, parseInt(limit));
-  } else {
-    result = data
-  }
-
-  try {
-    res.status(200).json({
-      success: true,
-      message: `User List: ${result.length} out of ${data.length} Users Loaded!`,
-      data: result
-    })
-  } catch (err) {
-    res.status(400).json({
-      success: false,
-      message: 'Failed to load User List',
-    })
-  }
-}
+import { IUser } from './users.interface';
 
 const generateRandomUser = async (req: Request, res: Response) => {
   const result = await usersService.generateRandomUser(data);
@@ -45,17 +21,42 @@ const generateRandomUser = async (req: Request, res: Response) => {
   }
 }
 
+const getAllUsers = async (req: Request, res: Response) => {
+  const { limit } = req.query;
+
+  let result;
+
+  if (typeof limit === 'string') {
+    result = await usersService.limitUser(data, parseInt(limit));
+  } else {
+    result = data
+  }
+
+  try {
+    res.status(200).json({
+      success: true,
+      message: `User List: ${result.length} out of ${data.length} Users Loaded`,
+      data: result
+    })
+  } catch (err) {
+    res.status(400).json({
+      success: false,
+      message: 'Failed to load User List',
+    })
+  }
+}
+
 const createUser = async (req: Request, res: Response) => {
-  const user = req.body;
+  const user: IUser = req.body
   const id = await generateUserId()
-  const result = data.push(user)
 
   try {
     user.id = id
+    data.push(<IUser>user)
     res.status(200).json({
       success: true,
       message: 'User created successfully!',
-      data: result,
+      data: data.find(data => data.id === id),
     });
   } catch (err) {
     res.status(400).json({
@@ -67,16 +68,17 @@ const createUser = async (req: Request, res: Response) => {
 
 const updateUserById = async (req: Request, res: Response) => {
   const { id } = req.params;
-  const { user } = req.body;
+  const user = <IUser>req.body;
 
   let result;
 
-  result = data.find(data => data.id === id);
+  let match = data.find(data => data.id === id);
 
-  if (result) {
-    result = data.push(result, user)
+  if (match) {
+    user.id = id
+    result = match = <IUser>user
   } else {
-    result = 'No matching user found by ${id}'
+    result = 'No user found with that id'
   }
 
   try {
@@ -94,14 +96,26 @@ const updateUserById = async (req: Request, res: Response) => {
 }
 
 const bulkUpdateUsers = async (req: Request, res: Response) => {
-  const [user] = req.body;
-  const result = data.filter(data => data.id === user.id);
+  const user = <IUser>req.body;
+  const match = data.filter(data => data.id === user.id);
+
+  let result;
+
+  if (match) {
+    match.forEach(match => {
+      if (match.id) {
+        match = <IUser>user
+      }
+    });
+  } else {
+    result = 'No user found with that id'
+  }
 
   try {
     res.status(200).json({
       success: true,
-      message: `User Data bulk updated`,
-      data: result.push(user),
+      message: `Bulk Updated User data`,
+      data: user
     });
   } catch (err) {
     res.status(400).json({
@@ -130,8 +144,8 @@ const deleteUser = async (req: Request, res: Response) => {
 }
 
 export default {
-  getAllUsers,
   generateRandomUser,
+  getAllUsers,
   createUser,
   updateUserById,
   bulkUpdateUsers,

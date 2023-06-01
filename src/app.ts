@@ -12,7 +12,7 @@ app.use(urlencoded({ extended: true }))
 app.use('/api/v1/users', usersRouter)
 
 app.get('/', async (req: Request, res: Response) => {
-    res.send('Connected to the user api service')
+    res.send('Connected to the user API 🛢 service')
 })
 
 export default app
