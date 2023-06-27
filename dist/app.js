@@ -37,12 +37,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importStar(require("express"));
 const cors_1 = __importDefault(require("cors"));
-const users_route_1 = __importDefault(require("./app/modules/users/users.route"));
+const quiz_json_1 = __importDefault(require("../src/app/modules/users/quiz.json"));
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use((0, express_1.urlencoded)({ extended: true }));
-app.use('/api/v1/users', users_route_1.default);
+app.get('/quiz', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    res.send(quiz_json_1.default);
+}));
 app.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     res.send('Connected to the user API 🛢 service');
 }));

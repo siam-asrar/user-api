@@ -1,0 +1,437 @@
+{
+    "status": true,
+    "data": [
+        {
+            "status": true,
+            "data": {
+                "total": 8,
+                "id": 1,
+                "name": "React",
+                "logo": "https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
+                "questions": [
+                    {
+                        "options": [
+                            "building  User Interface",
+                            "building Database",
+                            "building User Data Flow",
+                            "building  Shop"
+                        ],
+                        "id": "632800dfb0e009073fe05300",
+                        "question": "<p>React is mainly used&nbsp;for _______ (if needed, google it)</p>",
+                        "correctAnswer": "building  User Interface"
+                    },
+                    {
+                        "options": [
+                            "class  = “myClass”",
+                            "Class = “myClass”",
+                            "className = “myClass”",
+                            "I don’t know"
+                        ],
+                        "id": "632800dfb0e009073fe05301",
+                        "question": "<p>How do you declare a class called “myClass” in react?</p>",
+                        "correctAnswer": "className = “myClass”"
+                    },
+                    {
+                        "options": [
+                            "filter",
+                            "find",
+                            "map",
+                            "for"
+                        ],
+                        "id": "632800dfb0e009073fe05302",
+                        "question": "<p>Which method will you use in react to display components for each object in an array?</p>",
+                        "correctAnswer": "map"
+                    },
+                    {
+                        "options": [
+                            "const { name, setName } =  useState(“JingaLala”);",
+                            "[name, setName] =  UseState(“JingaLala”);",
+                            "const ( name, setName ) =  useState(“JingaLala”);",
+                            "const [name, setName] =  useState(“JingaLala”);"
+                        ],
+                        "id": "632800dfb0e009073fe05303",
+                        "question": "<p>How will create a state with a default value “JingaLala”?</p>",
+                        "correctAnswer": "const [name, setName] =  useState(“JingaLala”);"
+                    },
+                    {
+                        "options": [
+                            "We  should use class instead of className",
+                            "class is a reserved keyword in javascript",
+                            "We can use any name "
+                        ],
+                        "id": "632800dfb0e009073fe05304",
+                        "question": "<p>Why can’t we declare a class with the “class” keyword in React?</p>",
+                        "correctAnswer": "class is a reserved keyword in javascript"
+                    },
+                    {
+                        "options": [
+                            "Javascript Html ",
+                            "Javascript XML",
+                            "React XML",
+                            "Javascript Http"
+                        ],
+                        "id": "632800dfb0e009073fe05305",
+                        "question": "<p>What is&nbsp;&nbsp;JSX?</p>",
+                        "correctAnswer": "Javascript XML"
+                    },
+                    {
+                        "options": [
+                            "Uppercase",
+                            "Lowercase",
+                            "I can use Both"
+                        ],
+                        "id": "632800dfb0e009073fe05306",
+                        "question": "<p>When creating a component in React, the first letter of that function name should be in ____</p>",
+                        "correctAnswer": "Uppercase"
+                    },
+                    {
+                        "options": [
+                            "function  nayika() { return <h3>Mousumi </h3>}",
+                            "function  Nokiya()  [ return <h3> Mousumi <h3> ]",
+                            "function  Nayika() ( return <h3> Mousumi </h3> )",
+                            "function  Nayika() { return <h3> Mousumi </h3>   }"
+                        ],
+                        "id": "632800dfb0e009073fe05308",
+                        "question": "<p>What is the correct way of creating a component in react?</p>",
+                        "correctAnswer": "function  Nayika() { return <h3> Mousumi </h3>   }"
+                    }
+                ]
+            }
+        },
+        {
+            "status": true,
+            "data": {
+                "total": 9,
+                "id": 2,
+                "name": "JavaScript",
+                "logo": "https://live.staticflickr.com/65535/52412638962_12e932256a_o.png",
+                "questions": [
+                    {
+                        "options": [
+                            "High-level, often just-in-time compiled, and multi-paradigm programming language",
+                            "Dynamic typing, prototype-based object-orientation programming language",
+                            "A multi-paradigm language that supports event-driven, functional, and imperative programming styles",
+                            "All the above"
+                        ],
+                        "id": "62e531f2d2c8922246db90e3",
+                        "question": "<p>What is Javascript (Just google: wikipedia javascript and read first four paragraphs)</p>",
+                        "correctAnswer": "All the above"
+                    },
+                    {
+                        "options": [
+                            "boolean",
+                            "bulbuli",
+                            "number",
+                            "string"
+                        ],
+                        "id": "62e531f2d2c8922246db90e4",
+                        "question": "<p>Which one is not a type of variable?</p>",
+                        "correctAnswer": "bulbuli"
+                    },
+                    {
+                        "options": [
+                            "parseFloat()",
+                            "parseString()",
+                            "parseNumber()",
+                            "parseInt()"
+                        ],
+                        "id": "62e531f2d2c8922246db90e5",
+                        "question": "<p>Which method is used to convert a string to an integer?</p>",
+                        "correctAnswer": "parseInt()"
+                    },
+                    {
+                        "options": [
+                            "Netscape",
+                            "Google",
+                            "Facebook",
+                            "Firefox"
+                        ],
+                        "id": "62e531f2d2c8922246db90e6",
+                        "question": "<p>Which company developed JavaScript? (feel free to google it)</p>",
+                        "correctAnswer": "Netscape"
+                    },
+                    {
+                        "options": [
+                            "/",
+                            "%",
+                            "*",
+                            "\\"
+                        ],
+                        "id": "62e531f2d2c8922246db90e7",
+                        "question": "<p>Which one is not a mathematical operator in JS?</p>",
+                        "correctAnswer": "\\"
+                    },
+                    {
+                        "options": [
+                            "Set the value to 0",
+                            "Increase the value by 1",
+                            "Decrease the value by 1",
+                            "White plus toothpaste"
+                        ],
+                        "id": "62e531f2d2c8922246db90e8",
+                        "question": "<p>What does it mean by writing two plus signs after a number type variable?</p>",
+                        "correctAnswer": "Increase the value by 1"
+                    },
+                    {
+                        "options": [
+                            "21",
+                            "8",
+                            "218",
+                            "29"
+                        ],
+                        "id": "62e531f2d2c8922246db90e9",
+                        "question": "<p>If&nbsp;you have a var age = 21; and then you write age += 8; now what will be the value of the variable age?</p>",
+                        "correctAnswer": "29"
+                    },
+                    {
+                        "options": [
+                            "mobile-price",
+                            "1bookName",
+                            "user9",
+                            "“temperature”"
+                        ],
+                        "id": "62e531f2d2c8922246db90ea",
+                        "question": "<p>Which one is an acceptable variable name?</p>",
+                        "correctAnswer": "user9"
+                    },
+                    {
+                        "options": [
+                            "7",
+                            "2",
+                            "5",
+                            "3"
+                        ],
+                        "id": "62e531f2d2c8922246db90eb",
+                        "question": "<p>What will be the output of the code: console.log(17%5)</p>",
+                        "correctAnswer": "2"
+                    }
+                ]
+            }
+        },
+        {
+            "status": true,
+            "data": {
+                "total": 8,
+                "id": 3,
+                "name": "CSS",
+                "logo": "https://live.staticflickr.com/65535/52413665713_5977a693cb_o.png",
+                "questions": [
+                    {
+                        "options": [
+                            "Chicken Salad Sandwich",
+                            "Cascading Style Sheet",
+                            "Central Security Service",
+                            "Cold Shrimp Salad"
+                        ],
+                        "id": "62be7ef712f0d8480b2cbdb7",
+                        "question": "<p>What is the meaning of CSS?</p>",
+                        "correctAnswer": "Cascading Style Sheet"
+                    },
+                    {
+                        "options": [
+                            "<css></css>",
+                            "<color></color>",
+                            "<style></style>",
+                            "<head></head>"
+                        ],
+                        "id": "62be7ef712f0d8480b2cbdb8",
+                        "question": "<p>Which tag will you use to add style on your website?</p>",
+                        "correctAnswer": "<style></style>"
+                    },
+                    {
+                        "options": [
+                            "p{ blue: color }",
+                            "p{ color = blue }",
+                            "p{ color : blue; }",
+                            "p{ text: “blue”; }"
+                        ],
+                        "id": "62be7ef712f0d8480b2cbdb9",
+                        "question": "<p>How will you add blue color to all paragraph tags?</p><p>Hint: write four parts of a style rule</p>",
+                        "correctAnswer": "p{ color : blue; }"
+                    },
+                    {
+                        "options": [
+                            "color:purple;",
+                            "background color:purple;",
+                            "background-color:purple;",
+                            "backgroundColor:purple;"
+                        ],
+                        "id": "62be7ef712f0d8480b2cbdba",
+                        "question": "<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">How would you set a purple background color to an element?</span></p>",
+                        "correctAnswer": "background-color:purple;"
+                    },
+                    {
+                        "options": [
+                            "p{ width: 1/2 }",
+                            "p{ width: 50%; }",
+                            "p{ width: 0.5; }",
+                            "p{ width: half; }"
+                        ],
+                        "id": "62be7ef712f0d8480b2cbdbb",
+                        "question": "<p>How to set the width of all paragraph tags as half of the available width? </p><p>Hint: think about the total width as a percent and then think about the half of the width</p>",
+                        "correctAnswer": "p{ width: 50%; }"
+                    },
+                    {
+                        "options": [
+                            "The value of multiple ID attributes has to be unique",
+                            "Use ID to style a specific HTML element",
+                            "Same ID should be used in different HTML tags"
+                        ],
+                        "id": "62be7ef712f0d8480b2cbdbc",
+                        "question": "<p>Which one is not true?</p>",
+                        "correctAnswer": "Same ID should be used in different HTML tags"
+                    },
+                    {
+                        "options": [
+                            "Separate class names by a whitespace",
+                            "Separate class names by a comma",
+                            "You cannot apply more than one class name",
+                            "Use id"
+                        ],
+                        "id": "62be7ef712f0d8480b2cbdbe",
+                        "question": "<p>How can we add multiple classes to an HTML element?</p>",
+                        "correctAnswer": "Separate class names by a whitespace"
+                    },
+                    {
+                        "options": [
+                            "One",
+                            "Two",
+                            "Seven",
+                            "Four"
+                        ],
+                        "id": "62be7ef712f0d8480b2cbdc0",
+                        "question": "<p>How many values a margin style rule cannot have?</p>",
+                        "correctAnswer": "Seven"
+                    }
+                ]
+            }
+        },
+        {
+            "status": true,
+            "data": {
+                "total": 11,
+                "id": 5,
+                "name": "Git",
+                "logo": "https://live.staticflickr.com/65535/52412639027_5692c15b3f_o.png",
+                "questions": [
+                    {
+                        "options": [
+                            "গিট একটা হিট তামিল সিনেমা। যেটা আমি দেখিনি। আমার ফ্রেন্ডরা দেখছে। ",
+                            "কোড যাতে হারায় না যায় এবং একাধিকজন একই কোডে কাজ করা সহজ করতে",
+                            "গিট্টু মেরে দড়ি দিয়ে কোডকে তালগাছের সাথে বাইন্ধা রাখা"
+                        ],
+                        "id": "62e23f7c5e1ee9226696396a",
+                        "question": "<p>What is the purpose of git?</p>",
+                        "correctAnswer": "কোড যাতে হারায় না যায় এবং একাধিকজন একই কোডে কাজ করা সহজ করতে"
+                    },
+                    {
+                        "options": [
+                            "git--version",
+                            "git -version",
+                            "git --version",
+                            "git -- version"
+                        ],
+                        "id": "62e23f7c5e1ee9226696396b",
+                        "question": "<p>What is the right command to check the git version?</p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Hint: This is the command that you will need to check whether git is installed properly or not. Your answer will have the word git and also will have the word version.</span></p>",
+                        "correctAnswer": "git --version"
+                    },
+                    {
+                        "options": [
+                            "git commit -m “final code”",
+                            "git commit ---m“final code”",
+                            "git “final code” -- commit",
+                            "git push commit"
+                        ],
+                        "id": "62e23f7c5e1ee9226696396c",
+                        "question": "<p>What is the command to commit code with the message “final code”:</p>",
+                        "correctAnswer": "git commit -m “final code”"
+                    },
+                    {
+                        "options": [
+                            "git initialize",
+                            "git init",
+                            "git add readme.md",
+                            "git start"
+                        ],
+                        "id": "62e23f7c5e1ee9226696396d",
+                        "question": "<p>Which command will you use to start (initialize) a new git repository?</p>",
+                        "correctAnswer": "git init"
+                    },
+                    {
+                        "options": [
+                            "Live Pages",
+                            "Hosting Pages",
+                            "Github Pages",
+                            "Github Deploy"
+                        ],
+                        "id": "62e23f7c5e1ee9226696396e",
+                        "question": "<p>Which one is related to hosting a page in github?</p>",
+                        "correctAnswer": "Github Pages"
+                    },
+                    {
+                        "options": [
+                            "By clearing cache you can get some cash",
+                            "If you want to catch some cash clear cache",
+                            "Remove older data from a website",
+                            "Just to make Chrome uncle happy"
+                        ],
+                        "id": "62e23f7c5e1ee9226696396f",
+                        "question": "<p>Why will you consider clearing my browser cache?</p>",
+                        "correctAnswer": "Remove older data from a website"
+                    },
+                    {
+                        "options": [
+                            "Make a local backup of our code.",
+                            "Separate a small feature from main code",
+                            "Creating an ATM branch for withdrawing dollar "
+                        ],
+                        "id": "62e23f7c5e1ee92266963970",
+                        "question": "<p>What is the purpose of git branching? (though the video is marked as advanced, you will need to watch the video)</p>",
+                        "correctAnswer": "Separate a small feature from main code"
+                    },
+                    {
+                        "options": [
+                            "git branch new-button",
+                            "git checkout -b new-button-update",
+                            "git checkout -d new-button-update"
+                        ],
+                        "id": "62e23f7c5e1ee92266963971",
+                        "question": "<p>Which command will you use to create a new branch from the existing branch named \"new-button-update\"</p>",
+                        "correctAnswer": "git checkout -b new-button-update"
+                    },
+                    {
+                        "options": [
+                            "git commit push",
+                            "git checkout push",
+                            "git push",
+                            "git pull"
+                        ],
+                        "id": "62e23f7c5e1ee92266963972",
+                        "question": "<p>Which command will you use to send code to github?</p>",
+                        "correctAnswer": "git push"
+                    },
+                    {
+                        "options": [
+                            "git branch",
+                            "git checkout branch",
+                            "git checkout."
+                        ],
+                        "id": "62e23f7c5e1ee92266963973",
+                        "question": "<p>Which Command is used to check the list of branches?. (its ok, if you don't remember, feel free to search online)</p>",
+                        "correctAnswer": "git branch"
+                    },
+                    {
+                        "options": [
+                            "git checkout -b [branch name]",
+                            "git checkout  switch [branch name]",
+                            "git checkout [branch name]"
+                        ],
+                        "id": "62e23f7c5e1ee92266963974",
+                        "question": "<p>Which command will you use to change a branch?</p><p>(if needed google it)</p>",
+                        "correctAnswer": "git checkout [branch name]"
+                    }
+                ]
+            }
+        }
+    ]
+}
