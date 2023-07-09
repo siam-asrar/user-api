@@ -1,6 +1,4 @@
-deploy# This is a basic workflow that is manually triggered
-
-name: Manual workflow
+name: Manual Deploy
 
 on:
   workflow_dispatch:
